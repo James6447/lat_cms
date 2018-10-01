@@ -74,6 +74,9 @@ dul:
 
 ### 新增／建立资料表
 
-1.  複製一份 phinx.yml.sample 在project/application/app/migration的资料夹里，并命名为phinx.yml 且更改裡面的db連線
-2.  進入docker環境裡 project/application/app/migration 的资料夹
-3.  在此檔案執行 ../../../vendor/bin/phinx
+1.  複製一份 project/sql_migration/phinx.yml.sample 在project/sql_migration/的资料夹里，并命名为phinx.yml 且更改裡面的db連線
+2.  新增一個migrations ../vendor/bin/phinx create [檔案名稱]
+3.  執行migrations ../vendor/bin/phinx migrate 
+
+參考 http://docs.phinx.org/en/latest/index.html
+
